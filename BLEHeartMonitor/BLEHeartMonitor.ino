@@ -15,7 +15,7 @@
 unsigned long ultima_lectura = 0; //Variable usada para hacer una medicion cada 5 segundos
 const long intervalo = 5000; //Milisegundos
 
-String linked_user = "85:93:cf:9b:e7:b0"; //Primer usuario en conectarse. 
+String linked_user = ""; //Primer usuario en conectarse. 
 //Solo se permitirá a este usuario conectarse hasta que se reinicie el dispositivo
 
 //Creacion de servicio y sus caracteristicas
@@ -89,9 +89,11 @@ void loop() {
         Serial.print("Conectado: ");
         Serial.println(central.address());
         
-    
+        linked_user  = central.address();
         // Mientras esté conectado
         while (central.connected()) {
+
+          
 
             if(millis() - ultima_lectura >= intervalo){
               hacer_lectura();
@@ -115,7 +117,10 @@ void loop() {
               Serial.print("presion:");
               Serial.println(presion);
               
-                  
+             // while (!central.connected() && central.address() != linked_user){
+                //Serial.println("Esperando conexión...");
+                
+              //}
             }  
         }
 
