@@ -86,14 +86,6 @@ void loop() {
 
     if (central) {
 
-        if(linked_user == ""){
-          linked_user = central.address();
-        }
-        else if(linked_user != central.address()){
-          central.disconnect();
-          Serial.println("Dispositivo no permitido");
-          return;
-        }
         Serial.print("Conectado: ");
         Serial.println(central.address());
         
