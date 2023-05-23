@@ -48,7 +48,6 @@ void hacer_lectura(){
 
 void setup() {
  Serial.begin(9600);
-  while (!Serial);
 
   if (!BLE.begin()) {
     Serial.println("No se pudo iniciar BLE!");
