@@ -13,7 +13,7 @@
 
 
 unsigned long ultima_lectura = 0; //Variable usada para hacer una medicion cada 5 segundos
-const long intervalo = 5000; //Milisegundos
+const long intervalo = 15000; //Milisegundos
 
 String linked_user = ""; //Primer usuario en conectarse. 
 //Solo se permitirá a este usuario conectarse hasta que se reinicie el dispositivo
