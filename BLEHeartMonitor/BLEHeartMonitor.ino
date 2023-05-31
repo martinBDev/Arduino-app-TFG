@@ -4,9 +4,9 @@
 #define SERVICE_UUID      "180D"
 //Codigo 180D para servicios cardiacos, 
 //como se define en la pagina 69 del estandar:
-// https://btprodspecificationrefs.blob.core.windows.net/assigned-numbers/Assigned%20Number%20Types/Assigned%20Numbers.pdf
+// https://www.bluetooth.com/specifications/assigned-numbers/
 
-#define PULSACIONES_UUID  "2A57" // Heart Rate Measurement 2A37, PAGINA 87 DEL ESTANDAR
+#define PULSACIONES_UUID  "2A37" // Heart Rate Measurement 2A37, PAGINA 87 DEL ESTANDAR
 #define OXIGENO_UUID      "2A58" //No existe un estandar para el oxigeno, usamos UUID sin asignar
 #define AZUCAR_UUID       "2A59" //No existe un estandar para el azucar, usamos UUID sin asignar
 #define PRESION_UUID      "2A49" //Blood Pressure Measurement 2A49, PAGINA 83 DEL ESTANDAR
