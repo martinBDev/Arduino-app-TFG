@@ -26,24 +26,20 @@ BLEIntCharacteristic azucarCharacteristic(AZUCAR_UUID, BLERead | BLENotify ); //
 BLEIntCharacteristic presionCharacteristic(PRESION_UUID, BLERead | BLENotify ); // Característica presion sistolica
 
 
-int  bpm = random(60, 100); // Simula una lectura de las pulsaciones
-int  o2Percent = random(90, 100); // Simula una lectura del porcentaje de oxígeno en sangre
-int  sugarLevel = random(80, 120); // Simula una lectura del nivel de azúcar //Medido en md/dL. 
-//Nivel normal:80-130 antes de comer; 
-//Nivel prediabetes: 140-199 antes de comer
-//Diabetes > 200
-int  presion = random(0, 120);; //Presion sistólica normal: < 120
-
+int  bpm = random(30, 200);
+int  o2Percent = random(80, 100); 
+int  sugarLevel = random(50, 135); 
+int  presion = random(45, 150); 
 
 
 
 void hacer_lectura(){
 
   Serial.println("lECTURA");
-  bpm = random(60, 100); 
-  o2Percent = random(90, 100);
-  sugarLevel = random(80, 120);
-  presion = random(0, 120);
+ bpm = random(30, 200);
+  o2Percent = random(80, 100);
+  sugarLevel = random(50, 135);
+  presion = random(45, 150);
 }
 
 void setup() {
