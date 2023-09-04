@@ -1,5 +1,7 @@
 # :man_student:TRABAJO FIN DE GRADO: Plataforma en la Nube para el Monitoreo y Detección de Afecciones Cardiacas
 
+[Link a la documentación.](https://1drv.ms/b/s!AqhgxLU5tSeVgSKK-BMJhF4JYwiC?e=IgdN8t)
+
 ## :open_book:Resumen del proyecto
 
 Este TFG se basa en la creación de una aplicación móvil para la monitorización, en tiempo real, de los datos cardiacos, azúcar y oxígeno del usuario. Para el desarrollo de esta funcionalidad se ha requerido la creación de un simulador en Arduino, que será el encargado de generar los datos cardiacos que recogerá la aplicación: será nuestro ‘monitor cardiaco’ particular.
